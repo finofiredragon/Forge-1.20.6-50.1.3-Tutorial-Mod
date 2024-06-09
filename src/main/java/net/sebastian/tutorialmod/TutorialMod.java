@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.sebastian.tutorialmod.block.ModBlocks;
 import net.sebastian.tutorialmod.item.ModCreativeModeTabs;
 import net.sebastian.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
@@ -46,6 +47,7 @@ public class TutorialMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
